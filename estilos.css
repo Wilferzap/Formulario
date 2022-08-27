@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:wght@200&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&family=Work+Sans:ital,wght@1,600&display=swap');
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+/*aqui comienza el estilo en general*/
+body{
+    background-color: #161717;
+    color: white;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 450px;
+    margin: 0 auto;
+}
+.separador{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.separador hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+.section{
+    display: flex;
+}
+.section label input{
+    width: 80%;
+}
+
+.fila{
+    display: flex;
+    gap: 5px;
+}
+
+/*aqui comienza el estilo en particular le los botones y los inputs*/
+.googleboton{
+    display: flex;
+    align-items: center;
+    background-color: #1a73e8;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.googleboton:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+.googleboton span{
+    color: white;
+    padding: 15px;
+    font-weight: 400;
+}
+.googleboton picture{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.googleboton picture img{
+    width: 75%;
+}
+.twitterboton{
+    background-color: #eee;
+    color: #bbb;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+.twitterboton:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
+/*inputs*/
+label{
+    width: 100%;
+    flex-direction: column;
+    gap:5px;
+}
+label span{
+    font-weight: 700;
+}
+label input{ 
+    width: 90%;
+    border: none;
+    padding: 10px 20px;
+    background-color: #212121;
+    border-radius: 10px;
+    font-size: 14pt;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+}
+label input:hover{
+    background-color: #454045;
+    border-color: #f3f3f4 solid 1px;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+label input:focus{
+    background-color: white;
+    border-color: #f3f3f4 solid 1px;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+}
+.check input[type="checkbox"]{
+    width: 20px;
+}
+
+.check span{
+    font-weight: 300;
+}
+.enviar-boton{
+    border: none;
+    border-radius: 10px;
+    background-color: #ea4c89;
+    width: 100%;
+    color:white;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+.enviar-boton:hover{
+    opacity: 0.75;
+}
